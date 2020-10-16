@@ -11,3 +11,24 @@ nav{
 .form-inline img{
     margin-left:20px;
 }
+.navbar-toggler{
+    color:white;
+    border: 1px solid transparent!important;
+}
+.navbar-toggler i{
+    color:white;
+    font-size: 27px;
+}
+
+
+
+/*media queries*/
+@media (max-width: 988px){
+    .form-inline{
+        display: none;
+    }
+    .nav-link{
+        padding-bottom:20px;
+    }
+
+}
