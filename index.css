@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   background-color: #141414;
-  color: rgb(218, 208, 195);
+  color: rgb(240, 230, 218);
   font-size: 15px;
   border: none;
   font-family: "Martel Sans", sans-serif;
@@ -35,10 +35,16 @@ h1 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#section1 {
+  padding-top: 10px;
+}
 nav {
   background-image: linear-gradient(to bottom, black, #141414);
   height: 50px;
   padding: 20px;
+}
+.row {
+  margin-left: 0;
 }
 #editprofile {
   background-color: black;
