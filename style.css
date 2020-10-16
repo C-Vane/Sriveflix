@@ -48,9 +48,49 @@ select{
 }
 .img-fluid{
     height:130px;
+    transition: all ease .15s;
+
+}
+.img-fluid:hover{
+    transition: all ease .15s;
+    transform: scale(1.2);
 }
 
 /*trending movies section end*/
+
+
+/*footer*/
+.socials{
+    color: rgb(185, 185, 185)!important;
+    font-size: 20px;
+}
+.socials i{
+    padding-right:10px;
+}
+.footer a{
+    font-size:13px;
+    padding:2px;
+    color: rgb(185, 185, 185)!important;
+}
+.btn-footer{
+    color:rgb(185, 185, 185);
+    border: 1px solid rgb(185, 185, 185);
+    background-color: transparent;
+    height:30px;
+    text-align: center;
+}
+.btn-footer:hover{
+    color:rgb(185, 185, 185);
+    border: 1px solid rgb(185, 185, 185);
+    background-color: transparent;
+}
+footer{
+    font-size:13px;
+    padding:2px;
+    color: rgb(185, 185, 185)!important;
+}
+/*footer*/
+
 
 /*media queries*/
 @media (max-width: 988px){
@@ -69,5 +109,13 @@ select{
 @media (max-width:840px){
     .desktop{
         display:none;
+    }
+}
+@media(max-width:768px){
+    footer{
+        font-size:13px;
+        padding:2px;
+        color: rgb(185, 185, 185)!important;
+        text-align: center;
     }
 }
