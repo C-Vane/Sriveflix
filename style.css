@@ -78,16 +78,25 @@ select{
     background-color: transparent;
     height:30px;
     text-align: center;
+    transition: all ease .15s;
+
 }
 .btn-footer:hover{
-    color:rgb(185, 185, 185);
+    background-color: rgb(185, 185, 185);
+    color: #2c2c2c;
     border: 1px solid rgb(185, 185, 185);
-    background-color: transparent;
+    transition: all ease .25s;
 }
 footer{
     font-size:13px;
     padding:2px;
+    transition: all ease .15s!important;
     color: rgb(185, 185, 185)!important;
+}
+
+ .footer-link:hover{
+     transition: all ease .15s!important;
+    color:#fff!important;
 }
 /*footer*/
 
@@ -111,7 +120,7 @@ footer{
         display:none;
     }
 }
-@media(max-width:700px){
+@media(max-width:768px){
     .tablet{
         display:none;
     }
@@ -124,3 +133,8 @@ footer{
         text-align: center;
     }
 }
+
+
+
+
+
