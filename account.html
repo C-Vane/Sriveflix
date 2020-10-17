@@ -15,8 +15,8 @@
 
     <body>
         <nav id="custumnav">
-           <a href="index.html"> <img src="https://fontmeme.com/permalink/201016/43d068e8e91bfc2ab70c55cd3afe6508.png" alt="netflix-font"
-                style="background-color: transparent;" /></a> 
+            <img src="https://fontmeme.com/permalink/201016/43d068e8e91bfc2ab70c55cd3afe6508.png" alt="netflix-font"
+                style="background-color: transparent;" />
         </nav>
         <div id="profile">
             <h1>Edit Profile</h1>
@@ -27,7 +27,19 @@
                     <div class="col-12 col-md-3 col-lg-3" id="divprof">
                         <img id="userimg" src="images/strive-20school-20logo.png" alt="user profile"
                             class="img-fluid" />
-                        <button class="btn" id="editprofile"></button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary" type="button" id="editprofile" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <input class="dropdown-item" type="file" id="cprofpic" onchange="changePic(event)"
+                                    name="img" accept="image/*">
+
+
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-9">
                         <form>
@@ -37,11 +49,13 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="language">Language:
-                                        <select id="language" class="form-control">
-                                            <option>English</option>
-                                        </select>
+                                    <label for="google_translate_element">Language:
+
+                                        <div id="google_translate_element" class="language">
+                                        </div>
+
                                     </label>
+                                    <span id="cover"> </span>
                                 </div>
                             </section>
 
@@ -81,9 +95,11 @@
                 </div>
                 <div class="container">
 
-                    <button type="button" class="btn btn-primary">SAVE</button>
-                    <button type="button" class="btn btn-secondary">CANCEL</button>
-                    <button type="button" class="btn btn-secondary">DELETE PROFILE</button>
+                    <button type="button" class="btn btn-primary"
+                        onClick="window.location.href='home.html'">SAVE</button>
+                    <button type="button" onClick="window.location.reload()" class="btn btn-secondary">CANCEL</button>
+                    <button type="button" class="btn btn-secondary"
+                        onClick="window.location.href='settings.html'">DELETE PROFILE</button>
 
                 </div>
             </div>
@@ -91,6 +107,10 @@
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -100,6 +120,16 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+            const changePic = () => {
+                let image = document.getElementById('userimg');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            }
+        </script>
 
     </body>
+
 </html>

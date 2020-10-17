@@ -37,6 +37,8 @@ h1 {
 }
 #section1 {
   padding-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 nav {
   background-image: linear-gradient(to bottom, black, #141414);
@@ -48,7 +50,7 @@ nav {
 }
 #editprofile {
   background-color: black;
-  background-image: url(/image/images.png);
+  background-image: url(/images/images.png);
   background-size: 12px;
   background-repeat: no-repeat;
   background-position-x: 5px;
@@ -77,6 +79,9 @@ nav {
 }
 #userimg {
   border-radius: 5px;
+  width: 140px;
+  height: 140px;
+  height: auto;
 }
 
 #maturity,
@@ -100,8 +105,12 @@ nav {
   width: 500px;
   margin-bottom: 20px;
 }
-#language {
-  background-color: black;
+.goog-logo-link {
+  display: none;
+}
+
+.goog-te-combo,
+#google_translate_element {
   color: antiquewhite;
   width: fit-content;
   border-color: #666666;
@@ -113,6 +122,14 @@ nav {
 label {
   display: block;
   font-size: 20px;
+}
+#cover {
+  background-color: #141414;
+  padding: 5px 50px;
+  position: relative;
+  z-index: +1;
+  top: -25px;
+  border: none;
 }
 .btn-primary,
 .btn-secondary {
